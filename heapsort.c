@@ -144,7 +144,7 @@ static double pass(void (*sort)(TYPE *const array, const size_t num),
 int main(int argc, char *argv[]) {
   (void)argc;
   (void)argv;
-  printf("heapsort-bench, cc %s\b", __VERSION__);
+  printf("%s-bench, cc %s\b", argv[0], __VERSION__);
   for (int n = 1; n <= 3; ++n) {
     printf("\npass %d, small:\n", n);
     const double small_baseline =
